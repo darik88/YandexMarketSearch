@@ -29,8 +29,10 @@ public class YandexPageTest extends BaseTest {
         mobilePhonesPage.sortByPopularity();
 
         mobilePhonesPage.searchProductByName(productName);
-        String productPrice = mobilePhonesPage.getProductPrice();
+        // Check the product found is what we search for
+        Assert.assertTrue(mobilePhonesPage.getFirstItemName().contains(productName));
 
+        String productPrice = mobilePhonesPage.getProductPrice();
         System.out.println("The price of " + productName + " is " + productPrice);
     }
 }
