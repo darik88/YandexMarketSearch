@@ -1,4 +1,5 @@
 NOTE: the default browser is Chrome. Any other browser is not tested.
+
 No WebDrivers required. WebDriverManager downloads WebDriver for you.
 
 
