@@ -1,7 +1,8 @@
-What does this code do?
-
 NOTE: the default browser is Chrome. Any other browser is not tested.
+No WebDrivers required. WebDriverManager downloads WebDriver for you.
 
+
+What does this code do?
 
 1. Launch the default browser and maximize the window
 2. Open yandex.ru
