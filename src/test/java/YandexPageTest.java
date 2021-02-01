@@ -16,7 +16,7 @@ public class YandexPageTest extends BaseTest {
         ElectronicsPage electronicsPage = yandexMarketPage.goToElectronicsPage();
         Assert.assertEquals("Электроника", electronicsPage.getPageHeader());
 
-        MobilePhonesPage mobilePhonesPage = electronicsPage.goToCellPhonesPage();
+        MobilePhonesPage mobilePhonesPage = electronicsPage.goToMobilePhonesPage();
         Assert.assertEquals("Мобильные телефоны", mobilePhonesPage.getPageHeader());
 
         mobilePhonesPage.setManufacturers();

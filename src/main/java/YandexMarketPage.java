@@ -3,7 +3,8 @@ import org.openqa.selenium.WebDriver;
 
 public class YandexMarketPage extends PageObject {
 
-    private By electronicsButton = By.xpath("//span[text()='Электроника']");
+    private By electronicsButton = By.xpath("//a/span[text()='Электроника']");
+    private By infoBlockCloseButton = By.xpath("//button/span[text()='Понятно']");
 
     public YandexMarketPage(WebDriver driver) {
         super(driver);
@@ -15,6 +16,7 @@ public class YandexMarketPage extends PageObject {
     }
 
     public ElectronicsPage goToElectronicsPage() {
+        driver.findElement(infoBlockCloseButton).click();
         driver.findElement(electronicsButton).click();
         return new ElectronicsPage(driver);
     }

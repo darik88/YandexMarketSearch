@@ -14,7 +14,7 @@ public class ElectronicsPage extends PageObject {
         return driver.findElement(electronicsPageHeader).getText();
     }
 
-    public MobilePhonesPage goToCellPhonesPage() {
+    public MobilePhonesPage goToMobilePhonesPage() {
         driver.findElement(mobilePhonesLink).click();
         return new MobilePhonesPage(driver);
     }
